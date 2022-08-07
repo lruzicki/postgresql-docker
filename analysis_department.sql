@@ -28,9 +28,12 @@ begin
 end;
 $$;
 
+
+--w ramach zadania, roboczo zostawiam:
 --there is single table for each item
 call summary_for_each_item();
 --u can pick any product to generate table
 call proc_item_ord(3);
+--check result
 select * from total_items_sold_by_county
 
